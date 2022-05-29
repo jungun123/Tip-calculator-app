@@ -1,0 +1,282 @@
+img {
+  display: block;
+}
+
+body {
+  font-size: 24px;
+  font-family: 'Space Mono', monospace;
+  font-weight: bold;
+  background-color: rgb(197, 228, 237);
+}
+
+#logo {
+  width: 86.66px;
+  height: 53.14px;
+  margin: 0 auto;
+  margin-top: 163px;
+  margin-bottom: 87.86px;
+}
+
+#left {
+  width: 379px;
+  height: 388px;
+  margin: auto 0;
+}
+
+#TA {
+  width: 333px;
+  height: 71px;
+}
+
+#TA,
+#total {
+  display: flex;
+  justify-content: space-between;
+}
+
+.price {
+  line-height: 71px;
+  font-size: 48px;
+  color: #26C2AE;
+  text-align: right;
+}
+
+#zero {
+  color: #E17457;
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+#right {
+  width: 413px;
+  height: 417px;
+  margin: auto 0;
+  background-color: #00474B;
+  border-radius: 15px;
+  box-sizing: border-box;
+  padding: 40px;
+  position: relative;
+}
+
+main {
+  width: 920px;
+  height: 481px;
+  background-color: white;
+  margin: 0 auto;
+  margin-bottom: 239px;
+  border-radius: 25px;
+  display: flex;
+  gap: 48px;
+  padding: 0 32px 0 48px;
+  box-sizing: border-box;
+}
+
+#bill-title {
+
+  margin-bottom: 6px;
+}
+
+h2 {
+  color: #5E7A7D;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+#bill-input,
+#NoM-input {
+  font-family: 'Space Mono', monospace;
+  width: 100%;
+  height: 48px;
+  border-radius: 5px;
+  border: none;
+  background-color: #F3F9FA;
+  box-sizing: border-box;
+  padding: 6px 17px 6px 58.36px;
+  font-size: 24px;
+  color: #00474B;
+  text-align: right;
+}
+
+#buttons {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+#h2s {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+#bill-input:focus,
+#NoM-input:focus {
+  border: solid #26C2AE 2px;
+}
+
+#bill {
+  margin-bottom: 40px;
+}
+
+#bill>div,
+#NoM div:nth-child(2) {
+  position: relative;
+}
+
+#bill>div>img,
+#NoM div:nth-child(2)>img {
+  position: absolute;
+  top: 16.87px;
+  left: 19.76px;
+}
+
+input:focus {
+  outline: none;
+}
+
+input::-webkit-inner-spin-button {
+  display: none;
+}
+
+#ST-title {
+  margin-bottom: 16px;
+}
+
+#ST button {
+  width: 117px;
+  height: 48px;
+  display: block;
+  border: none;
+  font-family: 'Space Mono', monospace;
+  border-radius: 5px;
+  background-color: #00474B;
+  color: white;
+  font-size: 24px;
+}
+
+#custom {
+  width: 117px;
+  height: 48px;
+  border: none;
+  box-sizing: border-box;
+  background-color: #F3F9FA;
+  font-family: 'Space Mono', monospace;
+  font-size: 24px;
+  color: #00474B;
+  text-align: right;
+  border-radius: 5px;
+}
+
+#ST {
+  margin-bottom: 40px;
+}
+
+input:focus {
+  border: 2px solid #26C2AE;
+}
+
+#bill-input::-webkit-input-placeholder,
+#NoM-input::-webkit-input-placeholder {
+  color: #9EBBBD;
+}
+
+#custom::-webkit-input-placeholder {
+  text-align: center;
+  color: #547878;
+}
+
+#h2s {
+  margin-bottom: 6px;
+}
+
+.left {
+  margin-top: 16px;
+}
+
+.left-top {
+  color: white;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.left-bottom {
+  color: #7F9D9F;
+  font-size: 13px;
+  line-height: 19px;
+}
+
+#reset {
+  width: 333px;
+  border: none;
+  font-family: 'Space Mono', monospace;
+  height: 48px;
+  background-color: #26C2AE;
+  border-radius: 5px;
+  color: #00474B;
+  font-size: 20px;
+  position: absolute;
+  bottom: 40px;
+  left: 40px;
+}
+@media screen and (max-device-width:375px) {
+  #logo {
+    margin-top:50px;
+    margin-bottom:40.86px;
+  }
+  main {
+    width:100%;
+    height:789px;
+    flex-direction: column;
+    margin:0;
+    gap:32px;
+    padding:32px;
+    border-radius: 25px 25px 0 0;
+  }
+  #left {
+    margin:0;
+    width:311px;
+    height:436px;
+  }
+  #bill-input {
+    width:100%;
+  }
+  #ST button {
+    width:146.63px;
+    height:48px;
+  }
+  #custom {
+    width:146.63px;
+    height:48px;
+    text-align: right;
+  }
+  #bill, #ST {
+    margin-bottom: 32px;
+  }
+  .left {
+    margin-top:6px;
+  }
+  #right {
+    width:327px;
+    height:257px;
+    padding: 37px 22px 24px 24px;
+  }
+  .price {
+    font-size:32px;
+    line-height: 47px;
+    vertical-align: text-top;
+  }
+  #reset {
+    width:281px;
+    height:48px;
+    left:24px;
+    bottom:24px;
+  }
+  #TA {
+    width:281px;
+    height:48px;
+    margin-bottom:20px;
+  }
+}
